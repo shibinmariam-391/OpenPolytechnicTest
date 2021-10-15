@@ -15,6 +15,18 @@ namespace OpenPolytechnicTechnicalTest
             // Output the total here.
             //Console.WriteLine(Initial cost was ${originalCost});
             //Console.WriteLine(Cost after discounts is ${discountCost});
+
+
+
+
+            var order = new Order();
+            order.PrintHeader();
+            order.PrintHeaderOrderLines();
+            order.PrintDiscountedTotal();
+            order.PrintTotal();
+
+
+
         }
     }
 }
