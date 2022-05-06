@@ -14,8 +14,8 @@ Multiple discounts can be applied to the same purchase. All discounts are cumula
 Additionally, buyers can apply a gift card of any value up to $100. If the gift card value exceeds the purchase price, the display should be $0. Don’t worry about calculating the gift card balance.
 
 Examples:
-•	Club member purchases $550 worth of non-clearance items. Displayed price should be $496.38 ($496.375).
-•	Buyer purchases $200 worth of non-clearance items on January 15 and has a $20 gift card. Displayed price should be $176.
+- Club member purchases $550 worth of non-clearance items. Displayed price should be $496.38 ($496.375).
+- Buyer purchases $200 worth of non-clearance items on January 15 and has a $20 gift card. Displayed price should be $176.
 
 Additional requirements to implement if time allows:
 
