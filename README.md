@@ -1,3 +1,5 @@
+#Open Polytechnic Technical Test - Senior Level
+
 For this test you will be tasked with creating an application that acts as a pseudo shopping cart. It will consist of an Angular front-end and a C#/.NET back-end. The client is to take input and pass it to the API, and display the resulting total cost of the purchase. How you design the application outside of this is up to you.
 
 There are some business rules that must be adhered to when creating your calculation logic.
