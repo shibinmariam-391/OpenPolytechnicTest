@@ -7,7 +7,5 @@ import { Products } from '../productlist';
 export class ProductsService {
 
   constructor() { }
-  // getProducts(){
-  //   return Products;
-  // }
+  
 }

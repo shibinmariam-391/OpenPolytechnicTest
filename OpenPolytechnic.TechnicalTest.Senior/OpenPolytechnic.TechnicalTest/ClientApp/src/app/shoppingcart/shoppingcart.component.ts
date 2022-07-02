@@ -52,3 +52,4 @@ export class ShoppingcartComponent implements OnInit {
     console.log(this.newgrantotal)
   }
 }
+

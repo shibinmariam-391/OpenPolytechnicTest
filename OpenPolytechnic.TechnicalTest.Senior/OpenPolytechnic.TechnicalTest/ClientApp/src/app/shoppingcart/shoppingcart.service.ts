@@ -55,3 +55,4 @@ export class ShoppingcartService {
     return total.toFixed(2);
   }
 }
+
