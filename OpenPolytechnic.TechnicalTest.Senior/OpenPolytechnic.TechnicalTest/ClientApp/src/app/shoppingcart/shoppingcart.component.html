@@ -1,0 +1,59 @@
+<ng-container *ngIf="list.length != 0">
+    <div class="container">
+        <div class="card-table">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Sl.No</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of list; let i = index">
+                        <td>{{i+1}}</td>
+                        <td>{{item.Name}}</td>
+                        <td>${{item.Price}}</td>
+                        <td>{{item.quantity}}</td>
+                        <td>${{item.total}}</td>
+                        <td>
+                            <button (click)="removeItem(item)" class="btn btn-danger">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- <tr>
+                        <td><strong>Total Price : ${{grandTotal}}</strong></td>
+                    </tr> -->
+                </tbody>
+            </table>       
+       </div> 
+     
+       <div style="text-align:right;"><strong>Total Price : ${{grandTotal}}</strong></div>
+          
+     
+    <div class="discount row" style="padding-top: 10px;">
+        <button type="button" class="btn btn-warning btn-rounded" (click)="applydiscount()">Apply Discount</button>
+     
+        <div *ngIf="showdiscount == true">
+            <button class="btn btn-success btn-rounded" (click)="applyClearanceDiscount(grandTotal)" [disabled]="gotclearancedisc">Clearance Sale</button>
+            <button class="btn btn-info btn-rounded" (click)="applyMemberDiscount(grandTotal)" [disabled]="gotmemberdisc">Club Member</button>
+        </div>
+        
+    </div>
+    <div *ngIf="newgrantotal != 0" style="text-align:right;"><strong>Grand Total with Discount : ${{newgrantotal}}</strong></div>
+</div> 
+</ng-container>
+
+<ng-container *ngIf="list.length == 0">
+    <div class="container">
+        <div class="card">
+            <h4 class="card-title" style="text-align: center;">Shopping Cart</h4>
+        </div>
+        <div class="center">
+            <h5>The cart is empty</h5>
+            <button routerLink="/products" class="btn btn-primary">Shop Now</button>
+        </div>
+    </div>
+</ng-container>

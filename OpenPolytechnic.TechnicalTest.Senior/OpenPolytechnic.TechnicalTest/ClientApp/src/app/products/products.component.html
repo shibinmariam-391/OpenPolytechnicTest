@@ -1,0 +1,31 @@
+<div class="container" class="row">
+
+    <div class="head" >Shopping Items</div>
+
+    <button routerLink="/shopping">
+        <i style="font-size: 30px;" class="bi bi-cart"></i><div style="font-size: 10px;" class="badge bg-danger">{{totalItems}}</div> 
+    </button>
+
+    <table width="100%" style="padding-top: 20px;">
+        <thead>
+            <tr>
+                <th>Sl.No</th>
+                <th>Product</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of AllProducts">
+                <td>{{item.Id}}</td>
+                <td>{{item.Name}}</td>
+                <td>{{item.Category}}</td>
+                <td>${{item.Price}}</td>
+                <td><button class="btn btn-primary" (click)="addtocart(item)">Add to Cart</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
